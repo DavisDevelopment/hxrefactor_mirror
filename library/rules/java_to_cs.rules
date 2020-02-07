@@ -1,0 +1,50 @@
+// Java to C#
+
+ID = [_a-zA-Z][_a-zA-Z0-9]*
+LONGID = ID(?:[.]ID)*
+
+/(?:\b)final static String(?:\b)/static readonly string/
+
+/(?:\b)String(?:\b)/string/
+/(?:\b)boolean(?:\b)/bool/
+
+/(?:\b)final\s+//
+/(?:\b)(extends|implements)(?:\b)/:/
+
+/(?:\b)(throws\s+LONGID)/\/* $1 *\//
+
+/(?:\b)StringBuffer(?:\b)/StringBuilder/
+/(?:\b)NodeList(?:\b)/XmlNodeList/
+
+
+/(?:\b)Method(?:\b)/MethodInfo/
+/(?:\b)super(?:\b)/base/
+/(?:\b)Document(?:\b)/XmlDocument/
+/(?:\b)Element(?:\b)/XmlElement/
+/(?:\b)length(?:[(][)])?(?:\b)/Length/
+/(?:\b)append(?:\b)/Append/
+/(?:\b)Class(?:\b)/Type/
+/(?:\b)HashMap(?:\b)/Dictionary/
+/(?:\b)Vector(?:\b)/List/
+/(?:\b)Object(?:\b)/object/
+/(?:\b)[.]getMessage[(][)]/.Message/
+/(?:\b)[.]getClass[(][)]/.GetType()/
+/(?:\b)[.]getLength[(][)]/.Count/
+/(?:\b)hashCode[(][)]/GetHashCode()/
+/(?:\b)instanceof(?:\b)/is/
+/(?:\b)compareTo(?:\b)/CompareTo/
+/(?:\b)equals(?:\b)/Equals/
+/(?:\b)createElement(?:\b)/CreateElement/
+/(?:\b)createTextNode(?:\b)/CreateTextNode/
+/(?:\b)setAttribute(?:\b)/SetAttribute/
+/(?:\b)appendChild(?:\b)/AppendChild/
+/(?:\b)Node(?:\b)/XmlNode/
+/(?:\b)contains(?:\b)/Ñontains/
+/(?:\b)substring(?:\b)/Substring/
+/(?:\b)toLowerCase(?:\b)/ToLowerInvariant/
+/(?:\b)indexOf(?:\b)/IndexOf/
+/(?:\b)importNode(?:\b)/ImportNode/
+/(?:\b)trim(?:\b)/Trim/
+
+/(?:\b)XMLUtil.getNodeListByXPath(?:\b)/STUBE.SelectNodes/
+/(?:\b)Date(?:\b)/DateTime/
